@@ -42,17 +42,17 @@ def getFav(dog, house_edge):
 
 
 def printInfo(favProb, favML, dogProb, dogML, house_edge):
-	print ("Implied prob of favorite = " + str(round(favProb, 2)))
-	print ("Implied prob of dog = " + str(round(dogProb, 2)))
+	print ("Implied prob of favorite = " + str(round(favProb, 3)))
+	print ("Implied prob of dog = " + str(round(dogProb, 3)))
 	print ("ML of favorite = " + str(round(favML, 3)))
 	print ("ML of dog = " + str(round(dogML, 3)))
-	print ('House edge = ' + str(round(house_edge, 3)))
+	print ('House edge = ' + str(round(-house_edge*100, 3)) + "%")
 
 #standard house edge
 house_edge = -.02
 
 #getDog(-182, house_edge)
-getHouseEdge(1.4, 2.726)
+getHouseEdge(1.625, 2.3)
 
 
 
